@@ -44,6 +44,10 @@ public class BaseClass {
 	public void configBs() throws SQLException {
 		System.out.println("=====Connect to DB, Report Config====");
 		dblib.getDbconnection();
+		
+		
+		
+		
 	}
 
 	@BeforeClass
