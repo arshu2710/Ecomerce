@@ -27,10 +27,10 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//div[@id=\"nav-al-container\"]/descendant::a[@class=\"nav-action-signin-button\" and contains(.,'Sign in')]")
 			private WebElement signinlink;
 		 
-		 @FindBy(xpath="//input[@id='ap_email']")
+		 @FindBy(xpath="//input[@name='email']")
 			private WebElement mailIdfield;
 		 
-		 @FindBy(xpath="//input[@id='ap_password']")
+		 @FindBy(xpath="//input[@name='password']")
 			private WebElement passwordfield;
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
