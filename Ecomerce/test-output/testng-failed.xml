@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.amazon.scenario1.Run1">
+      <class name="com.amazon.scenario2.Removetheelementfromcart">
         <methods>
+          <include name="removetheelement"/>
           <include name="configBC"/>
           <include name="configBs"/>
           <include name="configAC"/>
           <include name="configAs"/>
           <include name="configBM"/>
-          <include name="loginTest"/>
           <include name="configAM"/>
         </methods>
-      </class> <!-- com.amazon.scenario1.Run1 -->
+      </class> <!-- com.amazon.scenario2.Removetheelementfromcart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
