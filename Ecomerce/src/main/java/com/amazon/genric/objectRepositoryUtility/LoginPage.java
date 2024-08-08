@@ -27,22 +27,36 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//div[@id=\"nav-al-container\"]/descendant::a[@class=\"nav-action-signin-button\" and contains(.,'Sign in')]")
 			private WebElement signinlink;
 		 
-		 @FindBy(xpath="//input[@id='ap_email']")
+		 @FindBy(xpath="//input[@name='email']")
 			private WebElement mailIdfield;
 		 
-		 @FindBy(xpath="//input[@id='ap_password']")
+		 @FindBy(xpath="//input[@type='password']")
 			private WebElement passwordfield;
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
 			private WebElement signinlink2;
 
 		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
-			private WebElement continuebtn;
+			private WebElement continuebtn ;
 		 
+		 @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
+		 private WebElement passdata;
+		 @FindBy(xpath = "//input[@id='nav-search-submit-button']")
+		 private WebElement searchbutton;
+		
 		 
+			public WebElement getSearchbutton() {
+			return searchbutton;
+		}
+
+
+		
+
 			public void loginToApp(String url,String username ,String password) throws IOException {
 
-				
+				System.out.println("Hi  ========");
+				System.out.println("Hello  ========");
+				System.out.println("Hello  ========");
 				driver.get(url);
 				Actions act=new Actions(driver);
 				act.moveToElement(mouseover).perform();
@@ -53,5 +67,65 @@ public class LoginPage extends webDriverUtility {
 				  signinlink2.click();
 				 
 		 }
+
+
+			public WebElement getMouseover() {
+				return mouseover;
+			}
+
+
+			public void setMouseover(WebElement mouseover) {
+				this.mouseover = mouseover;
+			}
+
+
+			public WebElement getSigninlink() {
+				return signinlink;
+			}
+
+
+			public void setSigninlink(WebElement signinlink) {
+				this.signinlink = signinlink;
+			}
+
+
+			public WebElement getMailIdfield() {
+				return mailIdfield;
+			}
+
+
+			public void setMailIdfield(WebElement mailIdfield) {
+				this.mailIdfield = mailIdfield;
+			}
+
+
+			public WebElement getPasswordfield() {
+				return passwordfield;
+			}
+
+
+			public void setPasswordfield(WebElement passwordfield) {
+				this.passwordfield = passwordfield;
+			}
+
+
+			public WebElement getSigninlink2() {
+				return signinlink2;
+			}
+
+
+			public void setSigninlink2(WebElement signinlink2) {
+				this.signinlink2 = signinlink2;
+			}
+
+
+			public WebElement getPassdata() {
+				return passdata;
+			}
+
+
+			public void setPassdata(WebElement passdata) {
+				this.passdata = passdata;
+			}
 			
 }
