@@ -35,10 +35,102 @@ public class LoginPage extends webDriverUtility {
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
 			private WebElement signinlink2;
+		 
+		 
 
 		
 		 
 		 
+			public WebElement getMouseover() {
+			return mouseover;
+		}
+
+
+
+
+
+
+		public void setMouseover(WebElement mouseover) {
+			this.mouseover = mouseover;
+		}
+
+
+
+
+
+
+		public WebElement getSigninlink() {
+			return signinlink;
+		}
+
+
+
+
+
+
+		public void setSigninlink(WebElement signinlink) {
+			this.signinlink = signinlink;
+		}
+
+
+
+
+
+
+		public WebElement getMailIdfield() {
+			return mailIdfield;
+		}
+
+
+
+
+
+
+		public void setMailIdfield(WebElement mailIdfield) {
+			this.mailIdfield = mailIdfield;
+		}
+
+
+
+
+
+
+		public WebElement getPasswordfield() {
+			return passwordfield;
+		}
+
+
+
+
+
+
+		public void setPasswordfield(WebElement passwordfield) {
+			this.passwordfield = passwordfield;
+		}
+
+
+
+
+
+
+		public WebElement getSigninlink2() {
+			return signinlink2;
+		}
+
+
+
+
+
+
+		public void setSigninlink2(WebElement signinlink2) {
+			this.signinlink2 = signinlink2;
+		}
+
+
+
+
+
+
 			public void loginToApp(String url,String username ,String password) throws IOException {
 
 				System.out.println("Hell0====");
