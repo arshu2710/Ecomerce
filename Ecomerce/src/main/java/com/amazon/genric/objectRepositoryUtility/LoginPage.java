@@ -30,7 +30,7 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//input[@name='email']")
 			private WebElement mailIdfield;
 		 
-		 @FindBy(xpath="//input[@type='password']")
+		 @FindBy(xpath="//input[@name='password']")
 			private WebElement passwordfield;
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
@@ -38,19 +38,8 @@ public class LoginPage extends webDriverUtility {
 
 		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
 			private WebElement continuebtn ;
-		
-		
-		 
-		
-
-
-		
 
 			public void loginToApp(String url,String username ,String password) throws IOException {
-
-				System.out.println("Hi  ========");
-				System.out.println("Hello  ========");
-				System.out.println("Hello  ========");
 				driver.get(url);
 				Actions act=new Actions(driver);
 				act.moveToElement(mouseover).perform();
@@ -61,8 +50,6 @@ public class LoginPage extends webDriverUtility {
 				  signinlink2.click();
 				 
 		 }
-
-
 			public WebElement getMouseover() {
 				return mouseover;
 			}
