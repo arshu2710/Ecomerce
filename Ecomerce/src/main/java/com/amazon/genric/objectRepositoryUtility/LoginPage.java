@@ -30,6 +30,9 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//input[@id='ap_email']")
 			private WebElement mailIdfield;
 		 
+		 @FindBy(xpath="//input[@id='ap_email']")
+			private WebElement EmailmailIdfield;
+		 
 		 @FindBy(xpath="//input[@id='ap_password']")
 			private WebElement passwordfield;
 		 
@@ -81,7 +84,9 @@ public class LoginPage extends webDriverUtility {
 			return mailIdfield;
 		}
 
-
+		public WebElement getEmailmailIdfield() {
+			return EmailmailIdfield;
+		}
 
 
 
