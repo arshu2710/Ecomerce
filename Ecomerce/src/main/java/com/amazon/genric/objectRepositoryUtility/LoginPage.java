@@ -38,16 +38,10 @@ public class LoginPage extends webDriverUtility {
 
 		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
 			private WebElement continuebtn ;
-		 
-		 @FindBy(xpath = "//input[@id='twotabsearchtextbox']")
-		 private WebElement passdata;
-		 @FindBy(xpath = "//input[@id='nav-search-submit-button']")
-		 private WebElement searchbutton;
+		
 		
 		 
-			public WebElement getSearchbutton() {
-			return searchbutton;
-		}
+		
 
 
 		
@@ -119,13 +113,6 @@ public class LoginPage extends webDriverUtility {
 			}
 
 
-			public WebElement getPassdata() {
-				return passdata;
-			}
-
-
-			public void setPassdata(WebElement passdata) {
-				this.passdata = passdata;
-			}
+			
 			
 }
