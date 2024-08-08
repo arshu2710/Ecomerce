@@ -43,21 +43,19 @@ public class LoginPage extends webDriverUtility {
 		 private WebElement passdata;
 		 @FindBy(xpath = "//input[@id='nav-search-submit-button']")
 		 private WebElement searchbutton;
-		 
+		
 		 
 			public WebElement getSearchbutton() {
 			return searchbutton;
 		}
 
 
-		public void setSearchbutton(WebElement searchbutton) {
-			this.searchbutton = searchbutton;
-		}
-
+		
 
 			public void loginToApp(String url,String username ,String password) throws IOException {
 
-				
+				System.out.println("Hi  ========");
+				System.out.println("Hello  ========");
 				driver.get(url);
 				Actions act=new Actions(driver);
 				act.moveToElement(mouseover).perform();
