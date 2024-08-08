@@ -10,8 +10,7 @@ public class Removetheelementfromcart extends BaseClass{
 	public void removetheelement()
 	{
 		LoginPage pg= new LoginPage(driver);
-		pg.getPassdata().sendKeys("iphone");
-		pg.getSearchbutton().click();
+		
 	}
 
 }
