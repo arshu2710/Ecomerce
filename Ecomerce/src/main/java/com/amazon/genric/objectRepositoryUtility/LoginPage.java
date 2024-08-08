@@ -30,19 +30,26 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//input[@name='email']")
 			private WebElement mailIdfield;
 		 
-		 @FindBy(xpath="//input[@name='password']")
+		 @FindBy(xpath="//input[@type='password']")
 			private WebElement passwordfield;
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
 			private WebElement signinlink2;
 
 		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
-			private WebElement continuebtn;
+			private WebElement continuebtn ;
+		
+		
 		 
 		
+
+
+		
+
 			public void loginToApp(String url,String username ,String password) throws IOException {
 
 				System.out.println("Hi  ========");
+				System.out.println("Hello  ========");
 				System.out.println("Hello  ========");
 				driver.get(url);
 				Actions act=new Actions(driver);
@@ -54,5 +61,58 @@ public class LoginPage extends webDriverUtility {
 				  signinlink2.click();
 				 
 		 }
+
+
+			public WebElement getMouseover() {
+				return mouseover;
+			}
+
+
+			public void setMouseover(WebElement mouseover) {
+				this.mouseover = mouseover;
+			}
+
+
+			public WebElement getSigninlink() {
+				return signinlink;
+			}
+
+
+			public void setSigninlink(WebElement signinlink) {
+				this.signinlink = signinlink;
+			}
+
+
+			public WebElement getMailIdfield() {
+				return mailIdfield;
+			}
+
+
+			public void setMailIdfield(WebElement mailIdfield) {
+				this.mailIdfield = mailIdfield;
+			}
+
+
+			public WebElement getPasswordfield() {
+				return passwordfield;
+			}
+
+
+			public void setPasswordfield(WebElement passwordfield) {
+				this.passwordfield = passwordfield;
+			}
+
+
+			public WebElement getSigninlink2() {
+				return signinlink2;
+			}
+
+
+			public void setSigninlink2(WebElement signinlink2) {
+				this.signinlink2 = signinlink2;
+			}
+
+
+			
 			
 }
