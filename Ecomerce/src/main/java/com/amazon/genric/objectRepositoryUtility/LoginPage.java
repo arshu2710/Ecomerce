@@ -47,7 +47,6 @@ public class LoginPage extends webDriverUtility {
 				act.moveToElement(mouseover).perform();
 				signinlink.click();
 				 mailIdfield.sendKeys(username);
-				  continuebtn.click();
 				  passwordfield.sendKeys(password);
 				  signinlink2.click();
 				 
