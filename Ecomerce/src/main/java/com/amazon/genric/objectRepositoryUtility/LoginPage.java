@@ -36,8 +36,7 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
 			private WebElement signinlink2;
 
-		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
-			private WebElement continuebtn;
+		
 		 
 		 
 			public void loginToApp(String url,String username ,String password) throws IOException {
@@ -48,7 +47,6 @@ public class LoginPage extends webDriverUtility {
 				act.moveToElement(mouseover).perform();
 				signinlink.click();
 				 mailIdfield.sendKeys(username);
-				  continuebtn.click();
 				  passwordfield.sendKeys(password);
 				  signinlink2.click();
 				 
