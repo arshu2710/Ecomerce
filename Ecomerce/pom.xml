@@ -9,7 +9,7 @@
   
   <profiles>
 	  <profile>
-		  <id>FRT</id>
+		
 		    <build>
 		<plugins>
 			<plugin>
@@ -19,7 +19,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>suite_fullRegressionTest.xml</suiteXmlFile>
+						<suiteXmlFile>testng1.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-07T15:02:12 IST" name="Default suite" finished-at="2024-08-07T15:03:04 IST" duration-ms="52133">
+  <suite started-at="2024-08-09T14:57:48 IST" name="Default suite" finished-at="2024-08-09T15:01:57 IST" duration-ms="248769">
     <groups>
     </groups>
-    <test started-at="2024-08-07T15:02:12 IST" name="Default test" finished-at="2024-08-07T15:03:04 IST" duration-ms="52133">
-      <class name="com.amazon.scenario1.Run1">
-        <test-method is-config="true" signature="configBs()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:02:09 IST" name="configBs" finished-at="2024-08-07T15:02:12 IST" duration-ms="3065" status="PASS">
+    <test started-at="2024-08-09T14:57:48 IST" name="Default test" finished-at="2024-08-09T15:01:57 IST" duration-ms="248769">
+      <class name="com.amazon.scenario1.Scanario2">
+        <test-method is-config="true" signature="configBs()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T14:57:47 IST" name="configBs" finished-at="2024-08-09T14:57:48 IST" duration-ms="1227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBs -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:02:12 IST" name="configBC" finished-at="2024-08-07T15:02:34 IST" duration-ms="22047" status="PASS">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T14:57:48 IST" name="configBC" finished-at="2024-08-09T14:58:12 IST" duration-ms="23400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:02:34 IST" name="configBM" finished-at="2024-08-07T15:03:04 IST" duration-ms="29584" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T14:58:12 IST" name="configBM" finished-at="2024-08-09T15:00:34 IST" duration-ms="142021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="loginTest()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:03:04 IST" name="loginTest" finished-at="2024-08-07T15:03:04 IST" duration-ms="51" status="PASS">
+        <test-method signature="AddToWishList()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T15:00:34 IST" name="AddToWishList" finished-at="2024-08-09T15:01:57 IST" duration-ms="82814" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:03:04 IST" name="configAM" finished-at="2024-08-07T15:03:04 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- AddToWishList -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T15:01:57 IST" name="configAM" finished-at="2024-08-09T15:01:57 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:03:04 IST" name="configAC" finished-at="2024-08-07T15:03:04 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T15:01:57 IST" name="configAC" finished-at="2024-08-09T15:01:57 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAs()[pri:0, instance:com.amazon.scenario1.Run1@5afa3c9]" started-at="2024-08-07T15:03:05 IST" name="configAs" finished-at="2024-08-07T15:03:05 IST" duration-ms="64" status="PASS">
+        <test-method is-config="true" signature="configAs()[pri:0, instance:com.amazon.scenario1.Scanario2@5f049ea1]" started-at="2024-08-09T15:01:57 IST" name="configAs" finished-at="2024-08-09T15:01:57 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAs -->
-      </class> <!-- com.amazon.scenario1.Run1 -->
+      </class> <!-- com.amazon.scenario1.Scanario2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

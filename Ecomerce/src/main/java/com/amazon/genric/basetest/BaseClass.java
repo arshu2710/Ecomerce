@@ -44,10 +44,10 @@ public class BaseClass {
 	public void configBs() throws SQLException {
 		System.out.println("=====Connect to DB, Report Config====");
 		dblib.getDbconnection();
-		
-		
-		
-		
+
+
+
+
 	}
 
 	@BeforeClass
@@ -56,7 +56,7 @@ public class BaseClass {
 		System.out.println("======Launch the Browser=======");
 
 		String BROWSER = flib.getDataFromPropertiesFile("browser");
-		
+
 		if (BROWSER.equals("chrome")) {
 			driver = new ChromeDriver();
 		} else if (BROWSER.equals("edge")) {
@@ -69,7 +69,7 @@ public class BaseClass {
 		sdriver = driver;
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	
+
 	}
 
 	@BeforeMethod
@@ -77,12 +77,13 @@ public class BaseClass {
 	public void configBM() throws IOException {
 		System.out.println("===Login====");
 
-		
+
 		String URL = flib.getDataFromPropertiesFile("url");
-		  String USERNAME = flib.getDataFromPropertiesFile("username"); 
-		 String PASSWORD= flib.getDataFromPropertiesFile("password");
-		 LoginPage lp=new LoginPage(driver);
-				 lp.loginToApp(URL, USERNAME, PASSWORD);
+		String USERNAME = flib.getDataFromPropertiesFile("username"); 
+		String PASSWORD= flib.getDataFromPropertiesFile("password");
+		LoginPage lp=new LoginPage(driver);
+		//lp.loginToApp1(USERNAME, PASSWORD);
+		lp.loginToApp(URL);
 	}
 
 	@AfterMethod
