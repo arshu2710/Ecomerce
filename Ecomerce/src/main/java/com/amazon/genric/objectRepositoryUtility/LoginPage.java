@@ -30,15 +30,18 @@ public class LoginPage extends webDriverUtility {
 		 @FindBy(xpath="//input[@name='email']")
 			private WebElement mailIdfield;
 		 
-		 @FindBy(xpath="//input[@name='password']")
+		 @FindBy(xpath="//input[@id='ap_password']")
 			private WebElement passwordfield;
 		 
 		 @FindBy(xpath="//span[@id=\"auth-signin-button\"]")
 			private WebElement signinlink2;
 
-		 @FindBy(xpath="//input[@class=\"a-button-input\"]")
+		 @FindBy(xpath="//input[@class=\"a-button-input\"]") 
 			private WebElement continuebtn ;
+		
+		
 
+	
 			public void loginToApp(String url,String username ,String password) throws IOException {
 				driver.get(url);
 				Actions act=new Actions(driver);
