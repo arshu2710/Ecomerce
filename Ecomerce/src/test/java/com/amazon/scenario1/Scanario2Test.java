@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.amazon.genric.basetest.BaseClass;
@@ -31,6 +32,7 @@ public class Scanario2Test extends BaseClass{
 		
 		WishListPage wp=new WishListPage(driver);
 		wp.getAddToWishListEdt().click();
+		Assert.fail();
 		
 		String USERNAME = flib.getDataFromPropertiesFile("username"); 
 		String PASSWORD= flib.getDataFromPropertiesFile("password");
