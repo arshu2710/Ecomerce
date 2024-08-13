@@ -18,7 +18,7 @@ import com.amazon.genric.webdriverUtility.webDriverUtility;
 public class Scanario2Test extends BaseClass{
 
 	@Test
-	public void AddToWishListTest() throws EncryptedDocumentException, IOException
+	public void AddToWishListTest() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		
 		String data = elib.getDataFromExcel("Sheet1", 1, 2);
@@ -32,11 +32,15 @@ public class Scanario2Test extends BaseClass{
 		
 		WishListPage wp=new WishListPage(driver);
 		wp.getAddToWishListEdt().click();
-		Assert.fail();
 		
 		String USERNAME = flib.getDataFromPropertiesFile("username"); 
 		String PASSWORD= flib.getDataFromPropertiesFile("password");
 		LoginPage lp=new LoginPage(driver);
 		lp.loginToApp1(USERNAME, PASSWORD);
+		
+		Thread.sleep(7000);
+		
+		driver.close();
+		
 	}
 }
