@@ -40,7 +40,6 @@ public class Scanario2Test extends BaseClass{
 		
 		Thread.sleep(7000);
 		
-		driver.close();
 		
 	}
 }
