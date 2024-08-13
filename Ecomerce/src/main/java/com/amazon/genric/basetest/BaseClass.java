@@ -81,6 +81,7 @@ public class BaseClass {
 		String URL = flib.getDataFromPropertiesFile("url");
 		  String USERNAME = flib.getDataFromPropertiesFile("username"); 
 		 String PASSWORD= flib.getDataFromPropertiesFile("password");
+		 //driver.get(URL);
 		 LoginPage lp=new LoginPage(driver);
 				 lp.loginToApp(URL, USERNAME, PASSWORD);
 	}
